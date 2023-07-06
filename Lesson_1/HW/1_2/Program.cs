@@ -6,15 +6,10 @@
         int b = int.Parse(Console.ReadLine()!);
 
         int c = int.Parse(Console.ReadLine()!);
+        int max = a;
 
-        if (a > b)
-        {Console.Max()
-            Console.WriteLine(" {0} - наибольшее число ", a);
-        }
-        else {
-              if (b > a > c) 
-            Console.WriteLine(" {0} - наибольшее число ", b); 
-        } 
-      else {
-        Console.WriteLine(" {0} - наибольшее число ", c);
-    }      
+        if (a > max) max = a;
+        if (b > max) max = b;
+        if (c > max) max = c;
+
+        Console.WriteLine(" {0} - наибольшее число ", max);    
